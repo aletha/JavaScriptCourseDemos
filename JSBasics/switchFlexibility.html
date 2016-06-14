@@ -1,0 +1,105 @@
+<script>
+
+var animal = 'Cow';
+switch (animal) {
+  case 'Cow':
+  case 'Giraffe':
+  case 'Dog':
+  case 'Pig':
+    document.write('This animal will go in the zoo or on a farm.');
+    break;
+  case 'Dinosaur':
+  default:
+    document.write('This animal will not.');
+}
+
+//can put default first if logical sense, but need break;
+
+
+
+document.write("<br>");
+var animal = 'Bob';
+switch (animal) {
+  default:
+  document.write('This animal will not go in the zoo.');
+  break;
+  case 'Cow':
+  case 'Giraffe':
+  case 'Dog':
+  case 'Pig':
+  document.write('This animal will go in the zoo.');
+ // break;
+}
+
+
+
+//switch is a strict equals, so what does this do?
+
+document.write("<br>");
+var n = "1";
+//var n = 1;
+switch(n){
+	case 1:
+	document.write(n, " result");
+	break;
+	default:
+	document.write(n, " results");
+}
+
+
+//comparison
+
+document.write("<br>");
+var n = "0";
+//pass true
+switch(true){
+	case n == 0:
+	document.write("no results<br>");
+	break;
+	case n != 1:
+	document.write(n, " results<br>");
+	break;
+	default:
+	document.write(n, " result<br>");
+}
+
+/*
+if(letter.charAt(0) === "a"){
+	if(letter.length === 3){
+		//
+	}
+	else if(letter.length ===2){
+
+	}
+}
+*/
+
+document.write("<br>");
+var letter = "bob";
+switch(letter.charAt(0)){
+	case "a":
+		switch(letter.length){
+			case 3:
+			document.write("a three letter word starting with 'a'")
+			break;
+			case 2:
+			document.write("a two letter word starting with 'a'")
+			//break not necessary
+			break;
+		}
+		//very important break; for case 'a':)
+		break;
+	case "b":
+		switch(letter.length){
+			case 3:
+			document.write("a three letter word starting with 'b'")
+			break;
+			case 2:
+			document.write("a two letter word starting with 'b'")
+			//break not necessary
+			break;
+		}
+}
+
+
+</script>

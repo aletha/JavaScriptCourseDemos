@@ -1,0 +1,12 @@
+<script>
+
+  function formatCurrency(num) {
+     return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
+ }
+
+document.write("$" + formatCurrency(1000000000));
+
+ </script>
+
+
+

@@ -1,0 +1,25 @@
+<script>
+
+ var currUS = new Intl.NumberFormat("en-US", 
+ { 
+     style: "currency", currency: "USD" 
+ })
+
+ var currGB = new Intl.NumberFormat("en-GB", 
+ { 
+     style: "currency", currency: "GBP" 
+ })
+
+ var currIE = new Intl.NumberFormat("en-IE", 
+ { 
+     style: "currency", currency: "EUR" 
+ })
+
+document.write(currUS.format(1000000000), "<br>");
+document.write(currGB.format(1000000000), "<br>");
+document.write(currIE.format(1000000000), "<br>");
+
+ </script>
+
+
+
